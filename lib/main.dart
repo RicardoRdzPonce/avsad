@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:helloworld/Screens/Boton_Flotante_screen.dart';
+import 'screens/home_screen.dart';
+import 'screens/contador_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -9,16 +10,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Boton_flotante(),
-      theme: ThemeData(
-        primarySwatch: Colors.red, 
-      accentColor: Colors.pink, 
-      textTheme: TextTheme(
-        bodyText2: TextStyle(
-          color: Colors.purple, 
-          fontSize: 40)
-          )
-        ),
+      home: HomeScreen(),
+      theme: ThemeData(primarySwatch: Colors.red, accentColor: Colors.pink, textTheme: TextTheme(bodyText2: TextStyle(color: Colors.purple, fontSize: 40))),
     );
   }
 }
